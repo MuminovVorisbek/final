@@ -12,4 +12,9 @@ app.get("/bmw/2024", (req, res) => {
 app.get("/bmw/2023", (req, res) => {
   res.json(bmw2024);
 });
-export const handler = ServerlessHttp(app);
+export const handler2 = ServerlessHttp(app);
+
+export const handler = async (event, context) => {
+  const result = await handler2(event, context);
+  return result;
+};
