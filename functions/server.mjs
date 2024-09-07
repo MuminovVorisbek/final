@@ -1,16 +1,16 @@
 
 import express from "express";
 import ServerlessHttp from "serverless-http";
-import products from './db/products.mjs'
-import products2 from './db/products2.mjs'
-import products3 from './db/products3.mjs'
-import products4 from './db/products4.mjs'
-import products5 from './db/products5.mjs'
-import products6 from './db/products6.mjs'
-import products7 from './db/products7.mjs'
-import products8 from './db/products8.mjs'
-import products9 from './db/products9.mjs'
-import products10 from './db/products10.mjs'
+import products from '../db/products.mjs'
+import products2 from '../db/products2.mjs'
+import products3 from '../db/products3.mjs'
+import products4 from '../db/products4.mjs'
+import products5 from '../db/products5.mjs'
+import products6 from '../db/products6.mjs'
+import products7 from '../db/products7.mjs'
+import products8 from '../db/products8.mjs'
+import products9 from '../db/products9.mjs'
+import products10 from '../db/products10.mjs'
 
 const app = express();
 app.get('/products?', (req, res) => {
